@@ -9,7 +9,7 @@
     $loginErr = '';
 
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
-        $username = clean_input(($_POST['username']));
+       $username = clean_input(($_POST['username']));
         $password = clean_input($_POST['password']);
 
         if($accountObj->login($username, $password)){
